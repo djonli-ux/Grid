@@ -1,3 +1,48 @@
-body {
-    background-color: black;
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.item {
+    width: 358px;
+    height: 411.4px;
+    border: 1px solid lightgrey;
+}
+
+.d{
+    grid-area: d;
+}
+
+.e{
+    grid-area: e;
+}
+
+.f{
+    grid-area: f;
+}
+
+.center {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 358px);
+    gap: 20px;
+    grid-template-areas: 
+    "a a a"
+    "d e f" 
+    "c c c";
+}
+
+.header {
+    grid-area: a;
+}
+
+.btn-home {
+    grid-area: c;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 10%;
+    background-color: rgb(51, 122, 183);
+    color: white;
 }
